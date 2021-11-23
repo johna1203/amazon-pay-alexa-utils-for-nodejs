@@ -79,13 +79,13 @@ export class AuthorizeAttributesBuilder {
     return this.withSoftDescriptor(softDescriptor);
   }
 
-  public withTransactionTimeout(transactionTimeout: string): AuthorizeAttributesBuilder {
+  public withTransactionTimeout(transactionTimeout: number): AuthorizeAttributesBuilder {
     this.needsoptionalAuthAttributes = true;
     this.transactionTimeout = transactionTimeout;
     return this;
   }
 
-  public setTransactionTimeout(transactionTimeout: string): AuthorizeAttributesBuilder {
+  public setTransactionTimeout(transactionTimeout: number): AuthorizeAttributesBuilder {
     return this.withTransactionTimeout(transactionTimeout);
   }
 
